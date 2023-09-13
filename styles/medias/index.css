@@ -1,3 +1,30 @@
+@media (max-width: 1600px)
+{
+    .container{
+        max-width: 1200px;
+    }
+
+    .navbar .container-fluid.container{
+        padding: 0rem 20px;
+    }
+
+    .navbar .nav-link{
+        font-size: 1rem;
+    }
+
+    .serviceCardHolder .serviceCard{
+        height: 22rem;
+    }
+
+    .serviceCardHolder{
+        gap: 2rem;
+    }
+
+    section.padded-t{
+        padding: 1rem 0;
+    }
+} 
+
 @media (max-width: 1200px) 
 {
     .navbar-expand-lg .navbar-nav{
