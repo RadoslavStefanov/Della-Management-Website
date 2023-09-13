@@ -351,3 +351,48 @@ i.light{
 [data-tooltip]:not([data-tooltip-persistent])::before {
     pointer-events: none;
 }
+
+@media (max-width: 1150px){
+    .service-selection{
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .service-selection li{
+        min-width: 180px;
+    }
+
+    .calculator-body .row p{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 720px){
+    .calculator-body > div.shown, .bill-trigger{
+        display: none;
+    }
+
+    .calculator-body .row{
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .calculator-body .row div{
+        width: 100%;
+    }
+
+    .calculator-body .row input, .calculator-body textarea{
+        width: 100%;
+    }
+}
+@media (max-width: 500px){
+    .calculator-body form button[type='submit']{
+        font-size: 1rem;
+        width: 100%;
+        translate: 0% 0;
+    }
+
+    .service-selection li{
+        min-width: 130px;
+    }
+}
