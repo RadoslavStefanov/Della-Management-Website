@@ -4,16 +4,16 @@ I was hired by a commercial cleaning company to recreate and modernize their old
 
 For this job there were these requirements:
 
-Users must have an easy way to any product the firm offers.
-The pictures were to be fully licensed.
-The website was required to work on most types of screens/devices/browsers.
-The site needed a completely new design.
-All the pages for the products should follow a commong design language.
-Form Captcha protection.
-A "ThankYou" page with a timer.
-SEO Optimization
-Price calculator for private clients ... and much more...
-To achieve the template/design freedom we needed, I decided to create the project using the vanilla tools like HTML/CSS/JS and build this site from the ground up.
+Users must have an easy way to any product the firm offers.</br>
+The pictures were to be fully licensed.</br>
+The website was required to work on most types of screens/devices/browsers.</br>
+The site needed a completely new design.</br>
+All the pages for the products should follow a commong design language.</br>
+Form Captcha protection.</br>
+A "ThankYou" page with a timer.</br>
+SEO Optimization</br>
+Price calculator for private clients ... and much more...</br>
+To achieve the template/design freedom we needed, I decided to create the project using the vanilla tools like HTML/CSS/JS and build this site from the ground up.</br>
 
 Here are a few pictures of the project at the moment:
 ![image](https://github.com/RadoslavStefanov/Della-Management-Website/assets/72268734/967642b5-6621-4df0-975f-6bdb23224eb7)
