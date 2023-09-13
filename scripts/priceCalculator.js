@@ -13,6 +13,9 @@ cleaningInput.addEventListener('input', updateFieldData);
 const repairInput = document.querySelector("#repairInput");
 repairInput.addEventListener('click', addRemoveRepairFee);
 
+const disinfectionInput = document.querySelector("#disinfectionInput");
+disinfectionInput.addEventListener('click', addRemoveDisinfectionFee);
+
 const showHideBillBtn = document.querySelector('.bill-trigger');
 showHideBillBtn.addEventListener('click', showBill);
 
@@ -28,6 +31,7 @@ let afterRepairCost = 280;
 //Base variables
 let totalPrice;
 let repairFeeAdded = false;
+let disinfectionFeeAdded = false;
 let calcFieldsMap = [];
 
 const fieldCreationMap = 
@@ -52,6 +56,12 @@ const fieldCreationMap =
     },
     {
         labelText: "След ремонт",
+        connectedField: "",
+        measurement: "",
+        price: afterRepairCost
+    },
+    {
+        labelText: "Дезинфекция на подове и повърхности",
         connectedField: "",
         measurement: "",
         price: afterRepairCost
@@ -215,6 +225,24 @@ function updateCalDisplay(){
             totalPrice = totalPrice + Number(x.priceConcat);
         }
     )
+
+    if(disinfectionFeeAdded)
+    {
+        let feePrice = 50;
+
+        initCalcEntry
+        (
+            "Дезинфекция на подове и повърхности",
+            "",
+            "",
+            "",
+            50,
+            "",
+            50.00
+        )
+
+        totalPrice = totalPrice + Number(feePrice);
+    }
     
     if(repairFeeAdded)
     {
@@ -261,6 +289,21 @@ function addRemoveRepairFee(){
     else
     {
         repairFeeAdded = false;
+    }
+
+    updateCalDisplay();
+}
+
+function addRemoveDisinfectionFee(){
+    let isChecked = disinfectionInput.getAttribute("checked");
+
+    if(isChecked === "true")
+    {
+        disinfectionFeeAdded = true;
+    }
+    else
+    {
+        disinfectionFeeAdded = false;
     }
 
     updateCalDisplay();
