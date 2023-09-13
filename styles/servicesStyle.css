@@ -1,0 +1,84 @@
+.servicesScroll{
+    margin: 0;
+    padding: 0;
+}
+
+.servicesScroll li{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.servicesScroll li > div{
+    display: flex;
+    border-left: 3px solid var(--della_blue);
+    padding-left: 0.5rem;
+    flex-direction: column;
+}
+
+.servicesScroll li p{
+    margin: 0;
+    padding: 0;
+}
+
+.servicesScroll li img{
+    max-height: 25rem;
+    border-radius: 1rem;
+}
+
+.servicesScroll li h3{
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.textSlider{
+    overflow: hidden;
+    margin: 0rem auto;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 9rem;
+    background-color: var(--della_offwhite);
+    padding: 0.2rem 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.textSlider:before,.textSlider:after{
+    position: absolute;
+    top: 0;
+    width: 5rem;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.textSlider:before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),var(--della_offwhite));
+}
+
+.textSlider:after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),var(--della_offwhite));
+}
+
+.slide{
+    display: inline-block;
+    animation: 20s slideText infinite linear;
+}
+
+.b-dot{
+    color: var(--della_blue);
+    padding-left: 1.5rem;
+    font-size: 1.4rem;
+}
+
+@keyframes slideText{
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(-200rem)
+    }
+}

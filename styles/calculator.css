@@ -1,0 +1,351 @@
+.dl-calculator{
+    margin-bottom: 9rem;
+}
+
+.calculator-body{
+    display: flex;
+    border-bottom: 5px solid var(--della_darkblue);
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    border-radius: 1rem;
+}
+
+.calculator-body form{
+    background: #daeef6;
+    border-radius: 1rem 0 0 1rem;
+    position: relative;
+    transition: all 0.3s;
+    overflow: hidden;
+    width: 100%;
+}
+
+.calculator-body form.rounded{
+    border-radius: 1rem!important;
+}
+
+.calculator-body form > p,
+.calculator-body .calculation-display p.cal-header{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--della_darkblue);
+    text-align: center;
+}
+
+.calculator-body form,
+.calculator-body > div{
+    padding: 1rem 1rem 0 1rem;
+}
+
+.service-selection{
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+    align-items: stretch;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.service-selection img{
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    width: 30%;
+}
+
+.service-selection li{
+    position: relative;
+    background-color: #ebf4f9;
+    padding: 0.5rem;
+    width: 20%;
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: all 0.1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1rem;
+}
+
+.service-selection li i{
+    top: 1.2rem;
+    right: 0.5rem;
+    position: absolute;
+    color: var(--della_darkblue);
+    display: none;
+}
+
+.service-selection li i.fa-regular{
+    display: block;
+}
+
+.service-selection li[checked="false"]{
+    filter: drop-shadow(0.3rem 0.2rem 0.2rem #cbcbcb) grayscale(100%);
+}
+
+.service-selection li[checked="true"]{
+    filter: drop-shadow(0.3rem 0.2rem 0.2rem #7596a3) grayscale(0%);
+    border: 1px solid var(--della_darkblue)
+}
+
+.service-selection li[checked="true"] i{
+    display: block;
+}
+
+.service-selection li.hoverable:hover{
+    cursor: pointer;
+    scale: 105%;
+    filter: drop-shadow(0.3rem 0.2rem 0.2rem #7596a3) grayscale(0%);
+}
+
+.informable{
+    position: absolute;
+    right: -20px;
+    font-size: 1rem;
+}
+
+.informable:hover{
+    cursor: pointer;
+}  
+
+.calculator-body .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0.9rem;
+    transition: all 0.2s;
+    align-items: center;
+}
+
+.row.hidden{
+    display: none;
+}
+
+.calculator-body .row label{
+    padding: 0;
+    margin: 0;
+    width: 50%;
+}
+
+.calculator-body .row input,
+.calculator-body textarea{
+    border: none;
+    width: 80%;
+    margin: 1rem 0;
+    min-height: 3rem;
+    border: 2px solid var(--della_darkblue);
+    border-radius: 0.5rem;
+    padding: 0 2rem 0rem 2rem;
+    padding-left: 0.5rem;
+}
+
+.calculator-body textarea{
+    overflow: hidden;
+}
+
+.calculator-body .row div{
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: end;
+}
+
+.calculator-body .row div.padded{
+    padding-right: 2.4rem;
+}
+
+.calculator-body .row i{
+    width: 5%;
+    color: gray;
+    transition: all 0.2s;
+    margin-left: 1rem;
+}
+
+.calculator-body .row i:hover{
+    scale: 120%;
+    cursor: pointer;
+    color: var(--della_darkblue);
+}
+
+.calculator-body textarea{
+    height: 2rem;
+    line-height: 2.8rem;
+}
+
+.calculator-body .info-popup{
+    width: 2rem!important;
+    height: 2rem!important;
+    position: absolute;
+    top: 0rem;
+    right: -1rem;
+    border-radius: 1rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    background-color: white;
+    color: var(--della_darkblue);
+    border-color: var(--della_darkblue);
+    padding: 0.1rem 0 0 0.1rem;
+}
+
+.calculator-body form button[type='submit']{
+    border: none;
+    color: var(--della_offwhite);
+    background-color: var(--della_darkblue);
+    margin-bottom: 1rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    width: 60%;
+    translate: 34% 0;
+}
+
+.underlined{
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+div.message p{
+    font-size: 1.2rem;
+    padding: 0;
+    text-align: center;
+    color: var(--della_darkblue);
+    font-weight: 600;
+} 
+
+.calculator-body > div{
+    background-color: #ebf4f9;
+    width: 0%;
+    display: flex;
+    border-radius: 0 1rem 1rem 0;
+    transition: all 0.3s;
+    visibility: hidden;
+    overflow: hidden;
+    padding: 0;
+}
+
+.calculator-body > div.shown{
+    width: 30%;
+    visibility:visible;
+    padding: 1rem;
+}
+
+.calculation-display{
+    display: flex;
+    text-align: end;
+    flex-direction: column;
+}
+
+.calculator-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calc-total{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-top: 2px dashed var(--della_darkblue);
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    color: var(--della_darkblue);
+    font-weight: 800;
+}
+ 
+.calc-total p{
+    font-size: 1rem!important;
+    padding: 0;
+    margin: 0;
+}
+
+.calc-total p.price{
+    font-size: 1.5rem!important;
+    display: flex;
+    flex-wrap: nowrap;
+}
+p.price{
+    position: relative;
+    top: 0.2rem;
+}
+
+.calc-total strong{
+    color: var(--della_darkblue);
+    margin-right: 0.5rem;
+}
+
+.entry{
+    margin-bottom: 2.3rem;
+    color: var(--della_darkblue);
+    font-weight: 400;
+}
+
+.entry strong{
+    font-size: 1.2rem;
+}
+
+.entry .sup{
+    color: var(--della_darkblue);
+}
+
+.entry p{
+    margin: 0;
+}
+
+.entry-separator{
+    height: 1px;
+    background: #b9b9b9;
+    margin: 1rem;
+}
+
+.bill-trigger{
+    color: var(--della_darkblue);
+    position: absolute;
+    top: 1.3rem;
+    right: 1.9rem;
+}
+
+i.light{
+    color: #9dc1e1;;
+}
+
+.bill-trigger:hover{
+    cursor: pointer;
+}
+
+.button-total{
+    width: 100%!important;
+    display: block!important;
+    text-align: center!important;
+}
+
+[data-tooltip]::before {
+    /* needed - do not touch */
+    content: attr(data-tooltip);
+    position: absolute;
+    opacity: 0;
+
+    /* customizable */
+    left: -20rem;
+    z-index: 999;
+    transition: all 0.15s ease;
+    padding: 10px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px silver;
+}
+
+[data-tooltip]:hover::before {
+    /* needed - do not touch */
+    opacity: 1;
+    width: 20rem;
+
+    /* customizable */
+    background: var(--della_offwhite);
+    margin-top: 2rem;
+    margin-left: 20px;
+}
+
+[data-tooltip]:not([data-tooltip-persistent])::before {
+    pointer-events: none;
+}

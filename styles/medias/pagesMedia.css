@@ -1,0 +1,228 @@
+@media (max-width: 1200px) 
+{
+    .navbar-expand-lg .navbar-nav{
+        font-size: 0.9rem;
+    }
+
+    .nav-link.active:before{
+        width: 4.5rem;
+        top: 3.3rem;
+    }
+
+    .textSlider{
+        margin-top: 8rem!important;
+    }
+}
+
+@media (max-width: 1100px) 
+{
+    #contact-form{
+        flex-direction: column;
+    }
+
+    #contact-form div{
+        width: 100%;
+    }
+
+    #ccContactsLabel{
+        position: relative;
+        left: 2rem;
+        color: red;
+    }
+
+    #contact-form form{
+        padding-bottom: 2rem;
+    }
+    #dl-advantages{
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    #dl-advantages li{
+        width: 45%;
+    }
+}
+
+@media (max-width: 990px) 
+{
+    .navbar-nav{ align-items: center; }
+    .nav-link.accent{ padding: 0.5rem 1rem;}
+    .nav-link.active:before{ display: none; }
+}
+
+@media (max-width: 770px) 
+{
+    body, html{
+        background-color: var(--della_offwhite);
+        overflow-x:hidden;
+    }
+
+    body > section{
+        padding: 0.1rem 0;
+    }
+
+    .navbar .container-fluid.container{
+        padding: 0.2rem 0.5rem;
+    }
+
+    nav.navbar-expand-lg{
+        top: 1.8rem!important;
+    }
+
+    .container{
+        padding: 0 10px;
+    }
+
+    video{
+        margin-top: 7rem;
+        top:-2rem;
+        z-index: 1;
+    }
+
+    .pageHeadBlock{
+        top: -1rem;
+        z-index: 2;
+    }
+
+    .pageHeadBlock .container{
+        gap: 1rem;
+    }
+
+    .pageHeadBlock img{
+        top: 0;
+    }
+
+    .navbar{
+        z-index: 9;
+    }
+
+    .navbar-nav{
+        text-align: center;
+    }
+
+    .serviceCardHolder{
+        gap: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serviceCardHolder .serviceCard{
+        width: 50%;
+        background-size :cover;
+    }
+
+    #dl-advantages li{
+        width: 100%;
+    }
+
+    .dl-decor-right{
+        top: 10rem;
+    }
+
+    .dl-decor-left{
+        top: -13rem;
+        left: -10rem;
+    }
+
+    .single-cta{
+        display: flex;
+    }
+
+    .payments-methods{
+        flex-wrap: wrap;
+    }
+    
+    .mapAnimator img.desktop{
+        display: none;
+    }
+    
+    .mapAnimator img.mobileNationalCoverage{
+        display: block;
+        width: 100%;
+    }
+
+    .payments-methods{
+        padding: 0;
+    }
+    .navbar-brand{
+        width: 30%;
+    }
+
+    .footer-text{ padding: 0!important;}
+}
+
+@media (max-width: 530px) 
+{
+    a.desktop{display: none;}
+    a.mobile{display: inline;}
+
+    .navbar-brand{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 585px) 
+{
+    .pageHeadBlock{
+        top: -2.5rem;
+    }
+
+    .pageHeadBlock .container{
+        gap:  1rem;
+        flex-direction: column;
+    }
+
+    .pageHeadBlock .container div
+    {
+        width: 100%;
+    }
+
+    .pageHeadBlock img{
+        top: -1rem;
+        border: 0.5rem solid var(--della_offwhite);
+    }
+
+    #contact-form{
+        padding: 0;
+    }
+
+    #contact-form li a{
+        width: auto;
+    }
+
+    .single-cta{
+        margin-top: 1rem;
+    }
+
+    .navbar-brand{
+        width: 40%;
+    }
+
+    .serviceCardHolder .serviceCard{
+        width: 90%;
+    }
+
+    .container.show-right div:nth-of-type(1) 
+    {
+        order: 2;
+    }
+}
+
+@media (max-width: 370px) 
+{
+    #contact-form li a{
+        font-size: 0.9rem;
+    }
+
+    #cb-cookie-banner{
+        padding: 0;
+        font-size: 0.9rem;
+    }
+}
