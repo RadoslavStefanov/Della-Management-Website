@@ -4,7 +4,6 @@ buttons.forEach(x => x.addEventListener('click', showServices));
 
 function showServices(e)
 {
-    debugger
     let target = e.currentTarget;
 
     if( !target.classList.contains("active") )

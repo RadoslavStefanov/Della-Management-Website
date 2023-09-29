@@ -15,6 +15,10 @@
     section.padded-t{
         padding: 1rem 0;
     }
+
+    .nav-link.active:before{
+        top: 2.8rem!important;
+    }
 } 
 
 @media (max-width: 1200px) 
@@ -70,6 +74,10 @@
     .navbar-nav{ align-items: center; }
     .nav-link.accent{ padding: 0.5rem 1rem;}
     .nav-link.active:before{ display: none; }
+
+    .navbar .nav-link{
+        text-align: center;
+    }
 }
 
 @media (max-width: 770px) 
@@ -216,7 +224,7 @@
         padding: 0;
     }
 
-    #contact-form li a{
+    #contact-form li p{
         width: auto;
     }
 
@@ -240,7 +248,7 @@
 
 @media (max-width: 370px) 
 {
-    #contact-form li a{
+    #contact-form li p{
         font-size: 0.9rem;
     }
 

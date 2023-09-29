@@ -221,7 +221,7 @@
         padding: 0;
     }
 
-    #contact-form li a{
+    #contact-form li p{
         width: auto;
     }
 
@@ -240,7 +240,7 @@
 
 @media (max-width: 370px) 
 {
-    #contact-form li a{
+    #contact-form li p{
         font-size: 0.9rem;
     }
 
